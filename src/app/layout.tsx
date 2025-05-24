@@ -13,8 +13,8 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: 'CreaFolio - Personal Portfolio',
-  description: 'My personal portfolio showcasing projects, skills, and background.',
+  title: 'Portafolio Ing. Informática',
+  description: 'Portafolio personal de un estudiante de Ingeniería Informática, mostrando proyectos, habilidades y experiencia.',
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="es" className="scroll-smooth dark"> {/* Added dark class here */}
       <body className={`${GeistSans.variable} ${GeistMono.variable} ${lora.variable} antialiased`}>
         {children}
         <Toaster />

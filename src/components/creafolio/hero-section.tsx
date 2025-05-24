@@ -10,25 +10,25 @@ export function HeroSection() {
         <div className="relative w-40 h-40 md:w-48 md:h-48 mx-auto mb-8 rounded-full overflow-hidden shadow-xl border-4 border-primary">
           <Image
             src="https://placehold.co/300x300.png"
-            alt="Your Name"
+            alt="Estudiante de Ingeniería Informática"
             layout="fill"
             objectFit="cover"
             priority
-            data-ai-hint="person professional"
+            data-ai-hint="student technology"
           />
         </div>
         <h1 className="text-4xl md:text-6xl font-bold text-primary mb-4">
-          Hello, I&apos;m Your Name
+          Hola, soy [Tu Nombre]
         </h1>
         <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-2xl mx-auto font-serif leading-relaxed">
-          A passionate Software Developer based in Your City, Your Country. I specialize in creating modern and responsive web applications.
+          Un apasionado estudiante de Ingeniería Informática. Me especializo en desarrollo de software, sistemas embebidos y IA.
         </p>
         <div className="space-x-4">
           <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-3 text-lg shadow-md transition-transform hover:scale-105">
-            <Link href="#projects">View My Work</Link>
+            <Link href="#projects">Ver Mis Proyectos</Link>
           </Button>
           <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10 rounded-full px-8 py-3 text-lg shadow-md transition-transform hover:scale-105">
-            <Link href="#contact">Get In Touch</Link>
+            <Link href="#contact">Contacta Conmigo</Link>
           </Button>
         </div>
         <div className="mt-16 animate-bounce">

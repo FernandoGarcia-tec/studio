@@ -7,21 +7,21 @@ export function Footer() {
     <footer className="bg-background border-t border-border/50">
       <div className="container mx-auto py-8 text-center">
         <div className="flex justify-center space-x-6 mb-6">
-          <Link href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+          <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="Perfil de GitHub">
             <Github className="w-7 h-7 text-foreground/70 hover:text-primary transition-colors" />
           </Link>
-          <Link href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+          <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="Perfil de LinkedIn">
             <Linkedin className="w-7 h-7 text-foreground/70 hover:text-primary transition-colors" />
           </Link>
-          <Link href="https://twitter.com/your-username" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
+          <Link href="#" target="_blank" rel="noopener noreferrer" aria-label="Perfil de Twitter">
             <Twitter className="w-7 h-7 text-foreground/70 hover:text-primary transition-colors" />
           </Link>
         </div>
         <p className="text-sm text-foreground/70 font-serif">
-          &copy; {currentYear} Your Name. All rights reserved.
+          &copy; {currentYear} [Tu Nombre]. Todos los derechos reservados.
         </p>
         <p className="text-xs text-foreground/50 mt-2 font-serif">
-          Built with Next.js and Tailwind CSS. Hosted on Firebase.
+          Desarrollado con Next.js y Tailwind CSS. Alojado en Firebase.
         </p>
       </div>
     </footer>

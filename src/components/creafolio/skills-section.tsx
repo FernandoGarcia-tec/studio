@@ -1,31 +1,56 @@
-import { Badge } from '@/components/ui/badge';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Code2, Database, Palette, ServerCog, Cloud, GitFork, Zap, Settings2, TerminalSquare, Workflow } from 'lucide-react'; // Added more icons
+import { Card, CardContent } from '@/components/ui/card';
+import { Code2, Database, Cpu, Zap, GitFork, Brain, Laptop, Network, HardDrive, TerminalSquare, Settings } from 'lucide-react';
 
 const skillsData = [
-  { name: 'JavaScript', icon: <Code2 className="w-8 h-8 text-primary" />, category: "Frontend" },
-  { name: 'React', icon: <Settings2 className="w-8 h-8 text-primary" />, category: "Frontend" },
-  { name: 'Next.js', icon: <Zap className="w-8 h-8 text-primary" />, category: "Frontend" },
-  { name: 'HTML5 & CSS3', icon: <Palette className="w-8 h-8 text-primary" />, category: "Frontend" },
-  { name: 'Tailwind CSS', icon: <Workflow className="w-8 h-8 text-primary" />, category: "Frontend" },
-  { name: 'Node.js', icon: <ServerCog className="w-8 h-8 text-primary" />, category: "Backend" },
-  { name: 'Python', icon: <Code2 className="w-8 h-8 text-primary" />, category: "Backend" },
-  { name: 'Express.js', icon: <ServerCog className="w-8 h-8 text-primary" />, category: "Backend" },
-  { name: 'SQL (PostgreSQL)', icon: <Database className="w-8 h-8 text-primary" />, category: "Databases" },
-  { name: 'MongoDB', icon: <Database className="w-8 h-8 text-primary" />, category: "Databases" },
-  { name: 'AWS', icon: <Cloud className="w-8 h-8 text-primary" />, category: "DevOps & Cloud" },
-  { name: 'Docker', icon: <TerminalSquare className="w-8 h-8 text-primary" />, category: "DevOps & Cloud" },
-  { name: 'Git & GitHub', icon: <GitFork className="w-8 h-8 text-primary" />, category: "Tools" },
+  // Lenguajes de Programación
+  { name: 'Python', icon: <Code2 className="w-8 h-8 text-primary" />, category: "Lenguajes de Programación" },
+  { name: 'C/C++', icon: <Code2 className="w-8 h-8 text-primary" />, category: "Lenguajes de Programación" },
+  { name: 'Java', icon: <Code2 className="w-8 h-8 text-primary" />, category: "Lenguajes de Programación" },
+  { name: 'JavaScript', icon: <Code2 className="w-8 h-8 text-primary" />, category: "Lenguajes de Programación" },
+  { name: 'SQL', icon: <Database className="w-8 h-8 text-primary" />, category: "Lenguajes de Programación" },
+  
+  // Desarrollo Web y Frontend
+  { name: 'HTML5 & CSS3', icon: <Laptop className="w-8 h-8 text-primary" />, category: "Desarrollo Web" },
+  { name: 'React', icon: <Zap className="w-8 h-8 text-primary" />, category: "Desarrollo Web" },
+  { name: 'Next.js', icon: <Zap className="w-8 h-8 text-primary" />, category: "Desarrollo Web" },
+  { name: 'Tailwind CSS', icon: <Settings className="w-8 h-8 text-primary" />, category: "Desarrollo Web" },
+  { name: 'Node.js', icon: <Settings className="w-8 h-8 text-primary" />, category: "Desarrollo Web" }, 
+  
+  // Hardware y Sistemas Embebidos
+  { name: 'Arduino', icon: <Cpu className="w-8 h-8 text-primary" />, category: "Hardware y Sistemas Embebidos" },
+  { name: 'Raspberry Pi', icon: <Cpu className="w-8 h-8 text-primary" />, category: "Hardware y Sistemas Embebidos" },
+  { name: 'Microcontroladores', icon: <Cpu className="w-8 h-8 text-primary" />, category: "Hardware y Sistemas Embebidos" },
+  { name: 'VHDL/Verilog', icon: <Cpu className="w-8 h-8 text-primary" />, category: "Hardware y Sistemas Embebidos" },
+
+  // IA y Machine Learning
+  { name: 'Machine Learning', icon: <Brain className="w-8 h-8 text-primary" />, category: "IA y Machine Learning" },
+  { name: 'TensorFlow/Keras', icon: <Brain className="w-8 h-8 text-primary" />, category: "IA y Machine Learning" },
+  
+  // Sistemas Operativos y Redes
+  { name: 'Linux', icon: <TerminalSquare className="w-8 h-8 text-primary" />, category: "Sistemas Operativos y Redes" },
+  { name: 'Redes TCP/IP', icon: <Network className="w-8 h-8 text-primary" />, category: "Sistemas Operativos y Redes" },
+  { name: 'Sistemas Operativos', icon: <HardDrive className="w-8 h-8 text-primary" />, category: "Sistemas Operativos y Redes" },
+
+  // Herramientas y DevOps
+  { name: 'Git & GitHub', icon: <GitFork className="w-8 h-8 text-primary" />, category: "Herramientas y DevOps" },
+  { name: 'Docker', icon: <TerminalSquare className="w-8 h-8 text-primary" />, category: "Herramientas y DevOps" },
 ];
 
-const skillCategories = ["Frontend", "Backend", "Databases", "DevOps & Cloud", "Tools"];
+const skillCategories = [
+  "Lenguajes de Programación", 
+  "Desarrollo Web",
+  "Hardware y Sistemas Embebidos", 
+  "IA y Machine Learning",
+  "Sistemas Operativos y Redes",
+  "Herramientas y DevOps"
+];
 
 export function SkillsSection() {
   return (
     <section id="skills" className="bg-secondary/30">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
-          Technical Skills
+          Habilidades Técnicas
         </h2>
         
         {skillCategories.map(category => (

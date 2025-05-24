@@ -19,7 +19,7 @@ function SubmitButton() {
   return (
     <Button type="submit" disabled={pending} className="w-full bg-accent hover:bg-accent/90 text-accent-foreground text-lg py-3 rounded-md shadow-md transition-transform hover:scale-105">
       {pending ? <Loader2 className="mr-2 h-5 w-5 animate-spin" /> : <Send className="mr-2 h-5 w-5" />}
-      Send Message
+      Enviar Mensaje
     </Button>
   );
 }
@@ -44,10 +44,10 @@ export function ContactSection() {
   useEffect(() => {
     if (state?.message) {
       toast({
-        title: "Success!",
+        title: "¡Éxito!",
         description: state.message,
       });
-      form.reset(); // Reset form on successful submission
+      form.reset(); 
     }
     if (state?.error && !state.fieldErrors) {
       toast({
@@ -62,32 +62,32 @@ export function ContactSection() {
     <section id="contact" className="bg-secondary/30">
       <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
-          Get In Touch
+          Contacta Conmigo
         </h2>
         <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div className="space-y-8">
                 <p className="text-lg text-foreground/80 font-serif leading-relaxed">
-                    I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your visions. 
-                    Feel free to reach out using the form, or connect with me through the contact details below.
+                    Siempre estoy abierto a discutir nuevos proyectos, ideas innovadoras u oportunidades para colaborar. 
+                    No dudes en contactarme a través del formulario o mis datos de contacto.
                 </p>
                 <div className="space-y-4">
                     <div className="flex items-center space-x-3">
                         <Mail className="w-6 h-6 text-accent"/>
-                        <a href="mailto:your.email@example.com" className="text-lg text-foreground hover:text-primary transition-colors">your.email@example.com</a>
+                        <a href="mailto:tu.email@example.com" className="text-lg text-foreground hover:text-primary transition-colors">tu.email@example.com</a>
                     </div>
                     <div className="flex items-center space-x-3">
                         <Phone className="w-6 h-6 text-accent"/>
-                        <span className="text-lg text-foreground">+1 (234) 567-8900</span>
+                        <span className="text-lg text-foreground">+34 (123) 456-789</span>
                     </div>
                     <div className="flex items-center space-x-3">
                         <MapPin className="w-6 h-6 text-accent"/>
-                        <span className="text-lg text-foreground">Your City, Your Country</span>
+                        <span className="text-lg text-foreground">[Tu Ciudad], [Tu País]</span>
                     </div>
                 </div>
             </div>
             <Card className="w-full shadow-xl bg-card">
               <CardHeader>
-                <CardTitle className="text-2xl text-primary">Send me a message</CardTitle>
+                <CardTitle className="text-2xl text-primary">Envíame un mensaje</CardTitle>
               </CardHeader>
               <Form {...form}>
                 <form action={formAction}>
@@ -97,9 +97,9 @@ export function ContactSection() {
                       name="name"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel htmlFor="name" className="text-foreground/80">Full Name</FormLabel>
+                          <FormLabel htmlFor="name" className="text-foreground/80">Nombre Completo</FormLabel>
                           <FormControl>
-                            <Input id="name" placeholder="Your Name" {...field} className="text-base py-3"/>
+                            <Input id="name" placeholder="Tu Nombre" {...field} className="text-base py-3"/>
                           </FormControl>
                           {state?.fieldErrors?.name && <FormMessage>{state.fieldErrors.name.join(', ')}</FormMessage>}
                            {!state?.fieldErrors?.name && form.formState.errors.name && (
@@ -113,9 +113,9 @@ export function ContactSection() {
                       name="email"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel htmlFor="email" className="text-foreground/80">Email Address</FormLabel>
+                          <FormLabel htmlFor="email" className="text-foreground/80">Correo Electrónico</FormLabel>
                           <FormControl>
-                            <Input id="email" type="email" placeholder="your.email@example.com" {...field} className="text-base py-3"/>
+                            <Input id="email" type="email" placeholder="tu.email@example.com" {...field} className="text-base py-3"/>
                           </FormControl>
                           {state?.fieldErrors?.email && <FormMessage>{state.fieldErrors.email.join(', ')}</FormMessage>}
                           {!state?.fieldErrors?.email && form.formState.errors.email && (
@@ -129,9 +129,9 @@ export function ContactSection() {
                       name="message"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel htmlFor="message" className="text-foreground/80">Your Message</FormLabel>
+                          <FormLabel htmlFor="message" className="text-foreground/80">Tu Mensaje</FormLabel>
                           <FormControl>
-                            <Textarea id="message" placeholder="Tell me about your project or inquiry..." rows={6} {...field} className="text-base py-3"/>
+                            <Textarea id="message" placeholder="Cuéntame sobre tu proyecto o consulta..." rows={6} {...field} className="text-base py-3"/>
                           </FormControl>
                           {state?.fieldErrors?.message && <FormMessage>{state.fieldErrors.message.join(', ')}</FormMessage>}
                            {!state?.fieldErrors?.message && form.formState.errors.message && (
