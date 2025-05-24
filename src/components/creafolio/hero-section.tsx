@@ -1,0 +1,42 @@
+import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { ArrowDown } from 'lucide-react';
+
+export function HeroSection() {
+  return (
+    <section id="hero" className="bg-gradient-to-b from-background to-secondary/30 min-h-[calc(100vh-5rem)] flex items-center">
+      <div className="container mx-auto text-center py-16 md:py-24">
+        <div className="relative w-40 h-40 md:w-48 md:h-48 mx-auto mb-8 rounded-full overflow-hidden shadow-xl border-4 border-primary">
+          <Image
+            src="https://placehold.co/300x300.png"
+            alt="Your Name"
+            layout="fill"
+            objectFit="cover"
+            priority
+            data-ai-hint="person professional"
+          />
+        </div>
+        <h1 className="text-4xl md:text-6xl font-bold text-primary mb-4">
+          Hello, I&apos;m Your Name
+        </h1>
+        <p className="text-xl md:text-2xl text-foreground/80 mb-8 max-w-2xl mx-auto font-serif leading-relaxed">
+          A passionate Software Developer based in Your City, Your Country. I specialize in creating modern and responsive web applications.
+        </p>
+        <div className="space-x-4">
+          <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-3 text-lg shadow-md transition-transform hover:scale-105">
+            <Link href="#projects">View My Work</Link>
+          </Button>
+          <Button asChild variant="outline" size="lg" className="border-primary text-primary hover:bg-primary/10 rounded-full px-8 py-3 text-lg shadow-md transition-transform hover:scale-105">
+            <Link href="#contact">Get In Touch</Link>
+          </Button>
+        </div>
+        <div className="mt-16 animate-bounce">
+          <Link href="#about" aria-label="Scroll to about section">
+            <ArrowDown className="w-8 h-8 mx-auto text-primary/70" />
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}

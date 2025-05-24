@@ -8,7 +8,12 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-  	extend: {
+    extend: {
+      fontFamily: {
+        sans: ['var(--font-geist-sans)', 'ui-sans-serif', 'system-ui'],
+        serif: ['var(--font-lora)', 'ui-serif', 'Georgia'],
+        mono: ['var(--font-geist-mono)', 'ui-monospace', 'SFMono-Regular'],
+      },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
