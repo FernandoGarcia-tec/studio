@@ -1,11 +1,11 @@
 import { ProjectCard, type Project } from './project-card';
-import { AiDescriptionGenerator } from './ai-description-generator';
+import fotoPerfil from '@/app/logo.png'
 
 const sampleProjects: Project[] = [
   {
     id: '1',
     title: 'Este Portafolio Web',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: fotoPerfil.src,
     imageHint: 'portfolio code screen',
     description: 'Portafolio personal desarrollado con Next.js, Tailwind CSS y ShadCN UI, integrando IA para la generación de descripciones de proyectos.',
     keywords: ['nextjs', 'tailwindcss', 'portfolio', 'ai', 'ingenieria informatica'],
@@ -51,7 +51,7 @@ export function ProjectsSection() {
         </div>
         
         <div className="mt-16 pt-12 border-t border-border">
-           <AiDescriptionGenerator />
+           
         </div>
       </div>
     </section>

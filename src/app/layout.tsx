@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="scroll-smooth dark"> {/* Added dark class here */}
+    <html lang="es" className="scroll-smooth dark">
       <body className={`${GeistSans.variable} ${GeistMono.variable} ${lora.variable} antialiased`}>
         {children}
         <Toaster />
