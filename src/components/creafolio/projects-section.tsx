@@ -51,7 +51,7 @@ const sampleProjects: Project[] = [
     title: 'Jaguar Saltarin',
     imageUrl: fotoPerfil.src,
     imageHint: 'iot smart home',
-    description: 'Sistema embebido basado en ESP32 para controlar luces y sensores en un entorno doméstico, con interfaz web para monitorización y control remoto.',
+    description: 'Videojuego de plataformas desarrollado con Godot, que combina elementos de aventura y acción en un entorno interactivo.',
     keywords: ['iot', 'esp32', 'sistemas embebidos', 'c++', 'mqtt'],
     liveLink: 'https://play.google.com/store/apps/details?id=org.fernant.JaguarSaltarin', // Enlace a demo si existe
     techStack: ['Godot', 'Gdscript','ibisPaintx','Audacity'],
