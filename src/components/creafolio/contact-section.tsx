@@ -53,17 +53,17 @@ export function ContactSection() {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Mail className="w-6 h-6 text-accent" />
-                <a href="mailto:tu.email@example.com" className="text-lg text-foreground hover:text-primary transition-colors">
-                  tu.email@example.com
+                <a href="mailto:garciaquintero00@gmail.com" className="text-lg text-foreground hover:text-primary transition-colors">
+                  garciaquintero00@gmail.com
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-6 h-6 text-accent" />
-                <span className="text-lg text-foreground">+34 (123) 456-789</span>
+                <span className="text-lg text-foreground">+52 (312) 219-3244</span>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="w-6 h-6 text-accent" />
-                <span className="text-lg text-foreground">[Tu Ciudad], [Tu País]</span>
+                <span className="text-lg text-foreground">[Colima], [Colima]</span>
               </div>
             </div>
           </div>

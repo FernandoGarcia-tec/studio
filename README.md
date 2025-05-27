@@ -1,5 +1,8 @@
-# Firebase Studio
+# Portafolio
 
-This is a NextJS starter in Firebase Studio.
+Mi portafolio web personal, donde se encuentran algunos de mis proyectos más destacados, mis habilidades técnicas y un poco sobre mi formación.
 
-To get started, take a look at src/app/page.tsx.
+<p align="center">
+  <img src="./src/app/Captura de pantalla 2025-05-27 000631.png" alt="Vista del sistema" width="600"/>
+</p>
+<a href="https://studio-mauve-kappa.vercel.app/" target="_blank">Visitar pagina</a>

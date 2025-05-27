@@ -7,10 +7,10 @@ import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 const navItems = [
-  { label: 'About', href: '#about' },
-  { label: 'Skills', href: '#skills' },
-  { label: 'Projects', href: '#projects' },
-  { label: 'Contact', href: '#contact' },
+  { label: 'Sobre mí', href: '#about' },
+  { label: 'Habilidades', href: '#skills' },
+  { label: 'Proyectos', href: '#projects' },
+  { label: 'Contacto', href: '#contact' },
 ];
 
 export function Header() {
@@ -31,7 +31,7 @@ export function Header() {
     <header className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-background/80 backdrop-blur-md shadow-md' : 'bg-transparent'}`}>
       <div className="container mx-auto flex h-20 items-center justify-between">
         <Link href="/" className="text-3xl font-bold text-primary hover:opacity-80 transition-opacity">
-          CreaFolio
+          Portafolio
         </Link>
         
         {/* Desktop Navigation */}
@@ -60,7 +60,7 @@ export function Header() {
               <div className="flex flex-col space-y-6">
                 <div className="flex justify-between items-center mb-4">
                    <Link href="/" className="text-2xl font-bold text-primary" onClick={closeMobileMenu}>
-                     CreaFolio
+                     Portafolio
                    </Link>
                    <Button variant="ghost" size="icon" onClick={closeMobileMenu}>
                       <X className="h-6 w-6 text-primary" />
