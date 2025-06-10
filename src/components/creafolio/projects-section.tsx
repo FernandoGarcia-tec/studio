@@ -6,6 +6,7 @@ import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 import React from 'react';
 import { Card } from '@/components/ui/card'; // Assuming AiDescriptionGenerator is wrapped in a Card
 import fotoPerfil from '@/app/logo.png'
+import pantalla from '@/app/pantallaGlam.png'; // Import your profile image (adjust path and extension as needed)
 import portafolio from '@/app/Captura de pantalla 2025-05-27 000631.png';
 
 const AnimatedProjectCard = React.forwardRef<HTMLDivElement, { project: Project, isVisible: boolean, delay: number }>(
@@ -50,7 +51,7 @@ const sampleProjects: Project[] = [
     id: '2',
     title: 'Jaguar Saltarin',
     imageUrl: fotoPerfil.src,
-    imageHint: 'iot smart home',
+    imageHint: 'Videojuego de plataformas',
     description: 'Videojuego de plataformas desarrollado con Godot, que combina elementos de aventura y acción en un entorno interactivo.',
     keywords: ['iot', 'esp32', 'sistemas embebidos', 'c++', 'mqtt'],
     liveLink: 'https://play.google.com/store/apps/details?id=org.fernant.JaguarSaltarin', // Enlace a demo si existe
@@ -58,13 +59,23 @@ const sampleProjects: Project[] = [
   },
   {
     id: '3',
+    title: 'Pagina web de ecommerce',
+    imageUrl: pantalla.src,
+    imageHint: 'pagina web commerce ',
+    description: 'Pagina web de eccomerce permite visualizar productos, realizar compras y gestionar de manera eficiente.',
+    keywords: ['Next.js', 'Tailwind CSS', 'Ecommerce', 'AI', 'Ingeniería Informática'],
+    liveLink: 'https://joyeria-web.vercel.app/', // Enlace a demo si existe
+    repoLink: 'https://github.com/FernandoGarcia-tec/JoyeriaWeb/', // Enlace a repositorio
+    techStack: ['Next.js', 'Tailwind CSS', 'Ecommerce', 'AI'],
+  }, {
+    id: '4',
     title: 'Aplicacion movil de ventas',
     imageUrl: 'https://placehold.co/600x400.png',
     imageHint: 'ai face recognition',
     description: 'Ecommerce app desarrollada con Flutter, que permite a los usuarios comprar y vender productos de manera sencilla y rápida.',
     keywords: ['python', 'opencv', 'machine learning', 'ia', 'vision por computador'],
-    liveLink: '#', // Enlace a demo si existe
-    repoLink: '#', // Enlace a repositorio
+    liveLink: '', // Enlace a demo si existe
+    repoLink: 'https://github.com/FernandoGarcia-tec/ventasflutter', // Enlace a repositorio
     techStack: ['Python', 'OpenCV', 'TensorFlow', 'Scikit-learn', 'Flask'],
   },
 ];
